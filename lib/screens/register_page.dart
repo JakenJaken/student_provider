@@ -29,7 +29,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Future<void> _register() async {
     try {
       final response = await http.post(
-        Uri.parse('http://localhost:8000/api/register'),
+        Uri.parse('http://192.168.182.252:8000/api/register'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'first_name': _firstnameController.text,

@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   String getProfilePictureUrl(Student student) {
-    String baseUrl = 'http://localhost:8000';
+    String baseUrl = 'http://192.168.182.252:8000';
     String relativeUrl = student.profilePicture;
     return '$baseUrl$relativeUrl';
   }

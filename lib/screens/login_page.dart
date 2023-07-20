@@ -18,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Future<void> _login() async {
     final response = await http.post(
-      Uri.parse('http://localhost:8000/api/login'),
+      Uri.parse('http://192.168.182.252:8000/api/login'),
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({
         'email': _emailController.text,
